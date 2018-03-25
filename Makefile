@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jm/Pulpit/semestr_vi/programowanie/Bubble_sort_OOP
+CMAKE_SOURCE_DIR = /home/jm/Pulpit/semestr_vi/programowanie/Programy_raport1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jm/Pulpit/semestr_vi/programowanie/Bubble_sort_OOP
+CMAKE_BINARY_DIR = /home/jm/Pulpit/semestr_vi/programowanie/Programy_raport1
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jm/Pulpit/semestr_vi/programowanie/Bubble_sort_OOP/CMakeFiles /home/jm/Pulpit/semestr_vi/programowanie/Bubble_sort_OOP/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jm/Pulpit/semestr_vi/programowanie/Programy_raport1/CMakeFiles /home/jm/Pulpit/semestr_vi/programowanie/Programy_raport1/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jm/Pulpit/semestr_vi/programowanie/Bubble_sort_OOP/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jm/Pulpit/semestr_vi/programowanie/Programy_raport1/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named SORT
+# Target rules for targets named Program
 
 # Build rule for target.
-SORT: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 SORT
-.PHONY : SORT
+Program: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Program
+.PHONY : Program
 
 # fast build rule for target.
-SORT/fast:
-	$(MAKE) -f CMakeFiles/SORT.dir/build.make CMakeFiles/SORT.dir/build
-.PHONY : SORT/fast
+Program/fast:
+	$(MAKE) -f CMakeFiles/Program.dir/build.make CMakeFiles/Program.dir/build
+.PHONY : Program/fast
 
 Bubble.o: Bubble.cpp.o
 
@@ -129,7 +129,7 @@ Bubble.o: Bubble.cpp.o
 
 # target to build an object file
 Bubble.cpp.o:
-	$(MAKE) -f CMakeFiles/SORT.dir/build.make CMakeFiles/SORT.dir/Bubble.cpp.o
+	$(MAKE) -f CMakeFiles/Program.dir/build.make CMakeFiles/Program.dir/Bubble.cpp.o
 .PHONY : Bubble.cpp.o
 
 Bubble.i: Bubble.cpp.i
@@ -138,7 +138,7 @@ Bubble.i: Bubble.cpp.i
 
 # target to preprocess a source file
 Bubble.cpp.i:
-	$(MAKE) -f CMakeFiles/SORT.dir/build.make CMakeFiles/SORT.dir/Bubble.cpp.i
+	$(MAKE) -f CMakeFiles/Program.dir/build.make CMakeFiles/Program.dir/Bubble.cpp.i
 .PHONY : Bubble.cpp.i
 
 Bubble.s: Bubble.cpp.s
@@ -147,8 +147,35 @@ Bubble.s: Bubble.cpp.s
 
 # target to generate assembly for a file
 Bubble.cpp.s:
-	$(MAKE) -f CMakeFiles/SORT.dir/build.make CMakeFiles/SORT.dir/Bubble.cpp.s
+	$(MAKE) -f CMakeFiles/Program.dir/build.make CMakeFiles/Program.dir/Bubble.cpp.s
 .PHONY : Bubble.cpp.s
+
+Fibonacci.o: Fibonacci.cpp.o
+
+.PHONY : Fibonacci.o
+
+# target to build an object file
+Fibonacci.cpp.o:
+	$(MAKE) -f CMakeFiles/Program.dir/build.make CMakeFiles/Program.dir/Fibonacci.cpp.o
+.PHONY : Fibonacci.cpp.o
+
+Fibonacci.i: Fibonacci.cpp.i
+
+.PHONY : Fibonacci.i
+
+# target to preprocess a source file
+Fibonacci.cpp.i:
+	$(MAKE) -f CMakeFiles/Program.dir/build.make CMakeFiles/Program.dir/Fibonacci.cpp.i
+.PHONY : Fibonacci.cpp.i
+
+Fibonacci.s: Fibonacci.cpp.s
+
+.PHONY : Fibonacci.s
+
+# target to generate assembly for a file
+Fibonacci.cpp.s:
+	$(MAKE) -f CMakeFiles/Program.dir/build.make CMakeFiles/Program.dir/Fibonacci.cpp.s
+.PHONY : Fibonacci.cpp.s
 
 Quick.o: Quick.cpp.o
 
@@ -156,7 +183,7 @@ Quick.o: Quick.cpp.o
 
 # target to build an object file
 Quick.cpp.o:
-	$(MAKE) -f CMakeFiles/SORT.dir/build.make CMakeFiles/SORT.dir/Quick.cpp.o
+	$(MAKE) -f CMakeFiles/Program.dir/build.make CMakeFiles/Program.dir/Quick.cpp.o
 .PHONY : Quick.cpp.o
 
 Quick.i: Quick.cpp.i
@@ -165,7 +192,7 @@ Quick.i: Quick.cpp.i
 
 # target to preprocess a source file
 Quick.cpp.i:
-	$(MAKE) -f CMakeFiles/SORT.dir/build.make CMakeFiles/SORT.dir/Quick.cpp.i
+	$(MAKE) -f CMakeFiles/Program.dir/build.make CMakeFiles/Program.dir/Quick.cpp.i
 .PHONY : Quick.cpp.i
 
 Quick.s: Quick.cpp.s
@@ -174,8 +201,35 @@ Quick.s: Quick.cpp.s
 
 # target to generate assembly for a file
 Quick.cpp.s:
-	$(MAKE) -f CMakeFiles/SORT.dir/build.make CMakeFiles/SORT.dir/Quick.cpp.s
+	$(MAKE) -f CMakeFiles/Program.dir/build.make CMakeFiles/Program.dir/Quick.cpp.s
 .PHONY : Quick.cpp.s
+
+Silnia.o: Silnia.cpp.o
+
+.PHONY : Silnia.o
+
+# target to build an object file
+Silnia.cpp.o:
+	$(MAKE) -f CMakeFiles/Program.dir/build.make CMakeFiles/Program.dir/Silnia.cpp.o
+.PHONY : Silnia.cpp.o
+
+Silnia.i: Silnia.cpp.i
+
+.PHONY : Silnia.i
+
+# target to preprocess a source file
+Silnia.cpp.i:
+	$(MAKE) -f CMakeFiles/Program.dir/build.make CMakeFiles/Program.dir/Silnia.cpp.i
+.PHONY : Silnia.cpp.i
+
+Silnia.s: Silnia.cpp.s
+
+.PHONY : Silnia.s
+
+# target to generate assembly for a file
+Silnia.cpp.s:
+	$(MAKE) -f CMakeFiles/Program.dir/build.make CMakeFiles/Program.dir/Silnia.cpp.s
+.PHONY : Silnia.cpp.s
 
 main.o: main.cpp.o
 
@@ -183,7 +237,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/SORT.dir/build.make CMakeFiles/SORT.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/Program.dir/build.make CMakeFiles/Program.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -192,7 +246,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/SORT.dir/build.make CMakeFiles/SORT.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/Program.dir/build.make CMakeFiles/Program.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -201,7 +255,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/SORT.dir/build.make CMakeFiles/SORT.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/Program.dir/build.make CMakeFiles/Program.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -211,14 +265,20 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... SORT"
+	@echo "... Program"
 	@echo "... edit_cache"
 	@echo "... Bubble.o"
 	@echo "... Bubble.i"
 	@echo "... Bubble.s"
+	@echo "... Fibonacci.o"
+	@echo "... Fibonacci.i"
+	@echo "... Fibonacci.s"
 	@echo "... Quick.o"
 	@echo "... Quick.i"
 	@echo "... Quick.s"
+	@echo "... Silnia.o"
+	@echo "... Silnia.i"
+	@echo "... Silnia.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

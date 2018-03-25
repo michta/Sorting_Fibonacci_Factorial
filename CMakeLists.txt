@@ -6,8 +6,10 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14")
 project(SORT)
 
 add_executable(
-    SORT
+    Program
     main.cpp
     Bubble.cpp
     Quick.cpp
+    Silnia.cpp
+    Fibonacci.cpp
 )

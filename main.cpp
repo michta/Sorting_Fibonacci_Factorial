@@ -1,9 +1,12 @@
 #include "Bubble.h"
 #include "Quick.h"
+#include "Silnia.h"
+#include "Fibonacci.h"
 #include <iostream>
 #include <string>
 #include <vector>
 #include <algorithm>
+
 using namespace std;
 int main(int argc, char *argv[])
 {
@@ -22,15 +25,17 @@ int main(int argc, char *argv[])
     file_before_sort += rozszerzenie;
     Bubble b;
     Quick q;
-  
+    Silnia s;
+    Fibonacci f;
     while(true)
     {
             vector<double> sorted_time{0.0};
             cout << "0. implement random \n";
             cout << "1. Bubble sort \n";
             cout << "2. Quick sort \n";
-            cout << "3 .show \n";
-            cout << "4. end \n";
+            cout << "3. Silnia \n";
+            cout << "4. Fibonacci \n";
+            cout << "5 end \n";
             cin >> decision;
 
     switch(decision)
@@ -44,7 +49,7 @@ int main(int argc, char *argv[])
         } break;
           
         case 1: { 
-                cout << "how many?"; cin >> liczba;
+            cout << "how many?"; cin >> liczba;
             start = clock();
             b.bubble_sort(vec_bubble, liczba);
             duration = (clock() - start) / (double)CLOCKS_PER_SEC;
@@ -55,23 +60,34 @@ int main(int argc, char *argv[])
 
         case 2: {
                 cout << "how many?"; cin >> liczba;
-
                 start = clock();
                 sort(vec_quick.begin(), vec_quick.begin() + liczba);
                 duration = (clock() - start) / (double)CLOCKS_PER_SEC;
                 cout << "Czas: " << duration << "\n";
                 q.data_time(liczba, duration);
                 q.set_data(vec_quick, file_after_sort, liczba);
-           
         } break;
 
         case 3: {
-            for(auto &x: vec_bubble)
-            cout << x << " ";
-            cout << "\n";
+                cout << "how many";cin >> liczba;
+                start = clock();
+                s.silnia(liczba);
+                duration = (clock() - start) / (double)CLOCKS_PER_SEC;
+                cout << "Czas: " << duration << "\n";
+                s.data_time(liczba, duration);
         } break;
 
-        case 4: return 0; break;
+        case 4: {
+
+                cout << "how many"; cin >> liczba;
+                start = clock();
+                f.fibonacci(liczba);
+                duration = (clock() - start) / (double)CLOCKS_PER_SEC;
+                cout << "Czas: " << duration << "\n";
+                f.data_time(liczba, duration);
+        } break;
+
+        case 5: return 0; break;
         default: return 0; break;
 
     }
